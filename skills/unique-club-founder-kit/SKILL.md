@@ -44,7 +44,7 @@ Part of UniqueClub founder toolkit. Learn more: https://uniqueclub.ai
 |-------|-------------|---------|
 | **content-multiplier** | Turn one idea into multiple content pieces | `npx skills add wulaosiji/founder-skills --skill content-multiplier` |
 | **social-post-generator** | Create engaging social media posts | `npx skills add wulaosiji/founder-skills --skill social-post-generator` |
-| **video-script-creator** | Write scripts for product demos and explainers | *Coming soon* |
+| **video-script-creator** | Write scripts for product demos and explainers | `npx skills add wulaosiji/founder-skills --skill video-script-creator` |
 | **newsletter-autopilot** | Draft newsletter content from your updates | `npx skills add wulaosiji/founder-skills --skill newsletter-autopilot` |
 
 ---

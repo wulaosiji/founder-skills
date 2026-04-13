@@ -64,6 +64,7 @@ Skills reference each other and build on shared context. Start with `unique-club
 | [meeting-minutes-ai](skills/meeting-minutes-ai/) | Extract action items, decisions, and key insights from meeting transcripts or recordings. | "会议纪要", "meeting minutes", "提取行动项", "action items", "会议总结" |
 | [newsletter-autopilot](skills/newsletter-autopilot/) | Draft newsletter content from company updates, meeting notes, or founder reflections. | "newsletter", "写newsletter", "邮件营销", "newsletter automation", "公司月报" |
 | [social-post-generator](skills/social-post-generator/) | Create engaging social media posts for LinkedIn, Twitter/X, WeChat, and more. | "写社媒文案", "social media post", "发LinkedIn", "Twitter文案", "小红书文案" |
+| [video-script-creator](skills/video-script-creator/) | Write scripts for product demos, explainer videos, elevator pitches, and founder storytelling. | "写视频脚本", "video script", "产品演示视频", "explainer video", "宣传片脚本" |
 
 ---
 
