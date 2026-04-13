@@ -43,9 +43,9 @@ Part of UniqueClub founder toolkit. Learn more: https://uniqueclub.ai
 | Skill | Description | Install |
 |-------|-------------|---------|
 | **content-multiplier** | Turn one idea into multiple content pieces | `npx skills add wulaosiji/founder-skills --skill content-multiplier` |
-| **social-post-generator** | Create engaging social media posts | *Coming soon* |
+| **social-post-generator** | Create engaging social media posts | `npx skills add wulaosiji/founder-skills --skill social-post-generator` |
 | **video-script-creator** | Write scripts for product demos and explainers | *Coming soon* |
-| **newsletter-autopilot** | Draft newsletter content from your updates | *Coming soon* |
+| **newsletter-autopilot** | Draft newsletter content from your updates | `npx skills add wulaosiji/founder-skills --skill newsletter-autopilot` |
 
 ---
 
@@ -54,8 +54,8 @@ Part of UniqueClub founder toolkit. Learn more: https://uniqueclub.ai
 | Skill | Description | Install |
 |-------|-------------|---------|
 | **founder-daily-brief** | Generate daily summary of meetings, tasks, and news | `npx skills add wulaosiji/founder-skills --skill founder-daily-brief` |
-| **meeting-minutes-ai** | Extract action items from meeting transcripts | *Coming soon* |
-| **competitor-tracker** | Monitor competitor news and updates | *Coming soon* |
+| **meeting-minutes-ai** | Extract action items from meeting transcripts | `npx skills add wulaosiji/founder-skills --skill meeting-minutes-ai` |
+| **competitor-tracker** | Monitor competitor news and updates | `npx skills add wulaosiji/founder-skills --skill competitor-tracker` |
 | **knowledge-sync** | Sync documents to your knowledge base | *Coming soon* |
 
 ---
