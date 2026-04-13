@@ -1,0 +1,2 @@
+# No external dependencies required for template generation
+# Optional: requests>=2.28.0 for future web API integrations
