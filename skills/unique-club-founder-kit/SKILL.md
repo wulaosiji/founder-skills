@@ -56,7 +56,6 @@ Part of UniqueClub founder toolkit. Learn more: https://uniqueclub.ai
 | **founder-daily-brief** | Generate daily summary of meetings, tasks, and news | `npx skills add wulaosiji/founder-skills --skill founder-daily-brief` |
 | **meeting-minutes-ai** | Extract action items from meeting transcripts | `npx skills add wulaosiji/founder-skills --skill meeting-minutes-ai` |
 | **competitor-tracker** | Monitor competitor news and updates | `npx skills add wulaosiji/founder-skills --skill competitor-tracker` |
-| **knowledge-sync** | Sync documents to your knowledge base | *Coming soon* |
 
 ---
 
