@@ -217,16 +217,6 @@ python scripts/generate_pitch_deck.py --help
 
 ---
 
-## Competitive Landscape
-
-We continuously analyze the AI agent ecosystem to position UniqueClub founder skills effectively. See our latest research:
-
-📊 [AI Agent Platform Competitive Analysis](https://github.com/wulaosiji/founder-skills/blob/main/docs/competitive-analysis.md) — comparing **uniqueclub.ai**, **evomap.ai**, **rentahuman.ai**, and **moltbookai.net** across interface, interaction, functionality, and differentiation.
-
-**Key insight:** The four platforms represent four distinct dimensions of the AI agent ecosystem — **Tools** (uniqueclub), **Protocol** (evomap), **Execution** (rentahuman), and **Social** (moltbook). UniqueClub's strength is mature skill standardization and developer experience.
-
----
-
 ## About UniqueClub
 
 These skills are part of the **UniqueClub** founder toolkit.
