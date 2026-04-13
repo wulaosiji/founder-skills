@@ -1,6 +1,6 @@
 # Founder Skills for AI Agents
 
-A collection of AI agent skills designed for startup founders. Build pitch decks, convert presentations, research investors, and scale your content — all with AI coding agents like Claude Code, OpenAI Codex, Cursor, and Windsurf.
+A collection of **17 AI agent skills** designed for startup founders. Build pitch decks, convert presentations, research investors, monitor competitors, and scale your content — all with AI coding agents like Claude Code, OpenAI Codex, Cursor, and Windsurf.
 
 Part of [UniqueClub](https://uniqueclub.ai) — tools and community for ambitious founders.
 
@@ -32,14 +32,27 @@ Skills reference each other and build on shared context. Start with `unique-club
         ┌──────────────┬───────────┼───────────┬──────────────┐
         ▼              ▼           ▼           ▼              ▼
    ┌──────────┐  ┌──────────┐ ┌────────┐ ┌──────────┐ ┌──────────┐
-   │ Fundraise│  │ Content  │ │ Research│ │  Growth  │ │  Daily   │
-   │          │  │          │ │         │ │          │ │          │
+   │Fundraising│  │ Content  │ │Market  │ │ Operations│ │  Daily   │
+   │          │  │          │ │Intel   │ │          │ │          │
    ├──────────┤  ├──────────┤ ├────────┤ ├──────────┤ ├──────────┤
-   │pitch-deck│  │content-  │ │investor│ │seo-audit │ │founder-  │
-   │  creator │  │multiplier│ │research│ │         │ │daily-brief│
-   │          │  │          │ │         │ │         │ │          │
-   │deck-web  │  │          │ │         │ │         │ │          │
-   │converter │  │          │ │         │ │         │ │          │
+   │pitch-deck│  │content-  │ │competitor││meeting-  │ │founder-  │
+   │  creator │  │multiplier│ │tracker │ │minutes-ai│ │daily-brief│
+   │          │  ├──────────┤ ├────────┤ │          │ │          │
+   │deck-web  │  │founder-  │ │market- │ ├──────────┤ ├──────────┤
+   │converter │  │content-  │ │intel-  │ │newsletter│ │          │
+   │          │  │writer    │ │brief   │ │autopilot │ │          │
+   │investor- │  ├──────────┤ ├────────┤ │          │ │          │
+   │ research │  │social-   │ │market- │ │          │ │          │
+   │          │  │post-     │ │research│ │          │ │          │
+   │          │  │generator │ │extractor││          │ │          │
+   │          │  ├──────────┤ ├────────┤ │          │ │          │
+   │          │  │video-    │ │social- │ │          │ │          │
+   │          │  │script-   │ │intel-  │ │          │ │          │
+   │          │  │creator   │ │ligence │ │          │ │          │
+   │          │  ├──────────┤ ├────────┤ │          │ │          │
+   │          │  │infographic││china-  │ │          │ │          │
+   │          │  │-generator│ │content-│ │          │ │          │
+   │          │  │          │ │research│ │          │ │          │
    └──────────┘  └──────────┘ └────────┘ └──────────┘ └──────────┘
 ```
 
@@ -47,10 +60,14 @@ Skills reference each other and build on shared context. Start with `unique-club
 1. Start with `unique-club-founder-kit` — define your startup context once
 2. Use `pitch-deck-creator` — generates a 10-page VC-ready deck using your context
 3. Use `deck-web-converter` — converts that deck into a responsive HTML page for sharing
+4. Use `market-intel-brief` — get a daily AI/startup intelligence briefing
+5. Use `content-multiplier` — turn your deck highlights into social posts
 
 ---
 
 ## Available Skills
+
+### Fundraising (3 skills)
 
 | Skill | Description | Triggers |
 |-------|-------------|----------|
@@ -58,13 +75,34 @@ Skills reference each other and build on shared context. Start with `unique-club
 | [pitch-deck-creator](skills/pitch-deck-creator/) | Generate a professional, VC-ready 10-page pitch deck as a .pptx file. Auto-adapts to your startup context. | "帮我写商业计划书", "生成BP", "做融资PPT", "pitch deck", "fundraising deck" |
 | [deck-web-converter](skills/deck-web-converter/) | Convert PPT/PDF pitch decks into responsive HTML for web sharing. Mobile-friendly, fast-loading. | "BP转网页", "PPT转HTML", "pitch deck online", "网页版BP" |
 | [investor-research](skills/investor-research/) | Research VCs, angels, and accelerators. Generate target lists with firm profiles, thesis fit, and warm intro paths. | "投资人调研", "找VC", "research investors", "VC list", "融资对象" |
-| [content-multiplier](skills/content-multiplier/) | Turn one piece of content into multiple platform-optimized variations (LinkedIn, Twitter, WeChat, newsletter, etc.). | "内容放大", "一鱼多吃", "content distribution", "多平台分发", " repurposing content" |
-| [founder-daily-brief](skills/founder-daily-brief/) | Generate a personalized daily briefing with tasks, meetings, industry news, and competitor updates. | "创始人日报", "每日简报", "startup daily brief", "morning founder report" |
+
+### Market Intelligence (5 skills)
+
+| Skill | Description | Triggers |
+|-------|-------------|----------|
 | [competitor-tracker](skills/competitor-tracker/) | Monitor competitor news, product launches, pricing changes, and strategic moves. | "竞品追踪", "监控竞争对手", "competitor tracker", "竞争分析", "竞品动态" |
-| [meeting-minutes-ai](skills/meeting-minutes-ai/) | Extract action items, decisions, and key insights from meeting transcripts or recordings. | "会议纪要", "meeting minutes", "提取行动项", "action items", "会议总结" |
-| [newsletter-autopilot](skills/newsletter-autopilot/) | Draft newsletter content from company updates, meeting notes, or founder reflections. | "newsletter", "写newsletter", "邮件营销", "newsletter automation", "公司月报" |
+| [market-intel-brief](skills/market-intel-brief/) | Generate AI/startup industry intelligence briefings with signal tracking and trend analysis. | "市场情报", "行业简报", "market intelligence", "startup trends", "AI行业动态" |
+| [market-research-extractor](skills/market-research-extractor/) | Multi-platform content extraction for competitive research and market analysis. | "内容提取", "竞品研究", "market research", "competitive analysis", "信息搜集" |
+| [social-intelligence](skills/social-intelligence/) | Monitor Twitter/X for competitor updates, sentiment shifts, and market signals. | "社媒监控", "Twitter监听", "social listening", "竞品社媒", "品牌监控" |
+| [china-content-research](skills/china-content-research/) | Research Chinese market content from WeChat, Zhihu, and local platforms. | "中国市场研究", "微信文章", "China market research", "中文内容", "本土调研" |
+
+### Content Creation (6 skills)
+
+| Skill | Description | Triggers |
+|-------|-------------|----------|
+| [content-multiplier](skills/content-multiplier/) | Turn one piece of content into multiple platform-optimized variations (LinkedIn, Twitter, WeChat, newsletter, etc.). | "内容放大", "一鱼多吃", "content distribution", "多平台分发", "repurposing content" |
+| [founder-content-writer](skills/founder-content-writer/) | Write long-form founder content: blogs, LinkedIn articles, essays, and thought leadership. | "创始人博客", "LinkedIn文章", "founder content", "个人品牌", "thought leadership" |
 | [social-post-generator](skills/social-post-generator/) | Create engaging social media posts for LinkedIn, Twitter/X, WeChat, and more. | "写社媒文案", "social media post", "发LinkedIn", "Twitter文案", "小红书文案" |
 | [video-script-creator](skills/video-script-creator/) | Write scripts for product demos, explainer videos, elevator pitches, and founder storytelling. | "写视频脚本", "video script", "产品演示视频", "explainer video", "宣传片脚本" |
+| [infographic-generator](skills/infographic-generator/) | Generate data visualizations and infographics for pitches, reports, and social sharing. | "信息图", "数据可视化", "infographic", "chart generation", "可视化报告" |
+| [newsletter-autopilot](skills/newsletter-autopilot/) | Draft newsletter content from company updates, meeting notes, or founder reflections. | "newsletter", "写newsletter", "邮件营销", "newsletter automation", "公司月报" |
+
+### Operations & Daily (3 skills)
+
+| Skill | Description | Triggers |
+|-------|-------------|----------|
+| [meeting-minutes-ai](skills/meeting-minutes-ai/) | Extract action items, decisions, and key insights from meeting transcripts or recordings. | "会议纪要", "meeting minutes", "提取行动项", "action items", "会议总结" |
+| [founder-daily-brief](skills/founder-daily-brief/) | Generate a personalized daily briefing with tasks, meetings, industry news, and competitor updates. | "创始人日报", "每日简报", "startup daily brief", "morning founder report" |
 
 ---
 
@@ -109,6 +147,12 @@ Once installed, just ask your agent:
 
 "先建立我的创始人档案"
 → Uses unique-club-founder-kit skill
+
+"帮我监控竞品的最新动态"
+→ Uses competitor-tracker skill
+
+"生成今天的市场情报简报"
+→ Uses market-intel-brief skill
 ```
 
 You can also invoke skills directly:
@@ -117,6 +161,7 @@ You can also invoke skills directly:
 /unique-club-founder-kit
 /pitch-deck-creator
 /deck-web-converter
+/market-intel-brief
 ```
 
 ---
@@ -128,6 +173,9 @@ Skills are designed to work together:
 - **unique-club-founder-kit** → **pitch-deck-creator**: Your startup context feeds directly into deck generation
 - **pitch-deck-creator** → **deck-web-converter**: Seamless flow from .pptx to web
 - **investor-research** → **pitch-deck-creator**: Tailor deck to specific investor thesis
+- **competitor-tracker** → **market-intel-brief**: Competitor signals feed into daily intelligence
+- **market-intel-brief** → **content-multiplier**: Turn insights into shareable content
+- **founder-content-writer** → **social-post-generator**: Long-form content broken into social snippets
 
 ---
 
@@ -136,6 +184,7 @@ Skills are designed to work together:
 - Claude Code, Cursor, or any AI agent supporting the [Agent Skills spec](https://agentskills.io)
 - For `pitch-deck-creator`: Python with `python-pptx` library
 - For `deck-web-converter`: Python with `python-pptx` and `pymupdf`
+- For `infographic-generator`: Python with `matplotlib` and `Pillow`
 
 ## Executable Scripts
 
@@ -149,6 +198,8 @@ Each skill includes executable Python scripts for standalone use:
 | `content-multiplier` | `scripts/multiplier.py` | Transform content for multiple platforms |
 | `meeting-minutes-ai` | `scripts/extract_minutes.py` | Extract minutes from transcript |
 | `founder-daily-brief` | `scripts/daily_brief.py` | Generate daily founder briefing |
+| `market-intel-brief` | `scripts/market_intel.py` | Generate market intelligence briefing |
+| `infographic-generator` | `scripts/generate_infographic.py` | Create data visualizations |
 
 ### Using the Scripts
 
@@ -166,11 +217,23 @@ python scripts/generate_pitch_deck.py --help
 
 ---
 
+## Competitive Landscape
+
+We continuously analyze the AI agent ecosystem to position UniqueClub founder skills effectively. See our latest research:
+
+📊 [AI Agent Platform Competitive Analysis](https://github.com/wulaosiji/founder-skills/blob/main/docs/competitive-analysis.md) — comparing **uniqueclub.ai**, **evomap.ai**, **rentahuman.ai**, and **moltbookai.net** across interface, interaction, functionality, and differentiation.
+
+**Key insight:** The four platforms represent four distinct dimensions of the AI agent ecosystem — **Tools** (uniqueclub), **Protocol** (evomap), **Execution** (rentahuman), and **Social** (moltbook). UniqueClub's strength is mature skill standardization and developer experience.
+
+---
+
 ## About UniqueClub
 
 These skills are part of the **UniqueClub** founder toolkit.
 
 🌐 **https://uniqueclub.ai** — Tools, community, and resources for startup founders.
+
+📂 **https://github.com/wulaosiji/founder-skills** — 17 skills and growing.
 
 Built by founders, for founders.
 
