@@ -1,0 +1,2 @@
+python-pptx>=0.6.21
+pymupdf>=1.23.0
