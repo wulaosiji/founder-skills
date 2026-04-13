@@ -135,7 +135,34 @@ Skills are designed to work together:
 
 - Claude Code, Cursor, or any AI agent supporting the [Agent Skills spec](https://agentskills.io)
 - For `pitch-deck-creator`: Python with `python-pptx` library
-- For `deck-web-converter`: Node.js for web conversion tools
+- For `deck-web-converter`: Python with `python-pptx` and `pymupdf`
+
+## Executable Scripts
+
+Each skill includes executable Python scripts for standalone use:
+
+| Skill | Script | Description |
+|-------|--------|-------------|
+| `pitch-deck-creator` | `scripts/generate_pitch_deck.py` | Generate .pptx from JSON data |
+| `deck-web-converter` | `scripts/convert_deck.py` | Convert PPT/PDF to HTML |
+| `investor-research` | `scripts/research_investors.py` | Generate investor research report |
+| `content-multiplier` | `scripts/multiplier.py` | Transform content for multiple platforms |
+| `meeting-minutes-ai` | `scripts/extract_minutes.py` | Extract minutes from transcript |
+| `founder-daily-brief` | `scripts/daily_brief.py` | Generate daily founder briefing |
+
+### Using the Scripts
+
+```bash
+# 1. Install a skill's dependencies
+cd skills/pitch-deck-creator
+pip install -r requirements.txt
+
+# 2. Run the script
+python scripts/generate_pitch_deck.py --input startup.json --output deck.pptx
+
+# 3. See help for all options
+python scripts/generate_pitch_deck.py --help
+```
 
 ---
 
