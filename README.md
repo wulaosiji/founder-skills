@@ -57,11 +57,9 @@ Skills reference each other and build on shared context. Start with `unique-club
 | [unique-club-founder-kit](skills/unique-club-founder-kit/) | Foundation skill. Sets up your startup context (problem, solution, market, traction) once, used by all other skills. | "帮我建立创始人档案", "startup context", "公司介绍模板", "founder kit" |
 | [pitch-deck-creator](skills/pitch-deck-creator/) | Generate a professional, VC-ready 10-page pitch deck as a .pptx file. Auto-adapts to your startup context. | "帮我写商业计划书", "生成BP", "做融资PPT", "pitch deck", "fundraising deck" |
 | [deck-web-converter](skills/deck-web-converter/) | Convert PPT/PDF pitch decks into responsive HTML for web sharing. Mobile-friendly, fast-loading. | "BP转网页", "PPT转HTML", "pitch deck online", "网页版BP" |
-
-**Coming Soon:**
-- `investor-research` — Research VCs, angels, and accelerator fit
-- `content-multiplier` — Turn one piece of content into 10+ variations
-- `founder-daily-brief` — Daily startup news, competitor moves, and opportunities
+| [investor-research](skills/investor-research/) | Research VCs, angels, and accelerators. Generate target lists with firm profiles, thesis fit, and warm intro paths. | "投资人调研", "找VC", "research investors", "VC list", "融资对象" |
+| [content-multiplier](skills/content-multiplier/) | Turn one piece of content into multiple platform-optimized variations (LinkedIn, Twitter, WeChat, newsletter, etc.). | "内容放大", "一鱼多吃", "content distribution", "多平台分发", " repurposing content" |
+| [founder-daily-brief](skills/founder-daily-brief/) | Generate a personalized daily briefing with tasks, meetings, industry news, and competitor updates. | "创始人日报", "每日简报", "startup daily brief", "morning founder report" |
 
 ---
 
@@ -124,7 +122,7 @@ Skills are designed to work together:
 
 - **unique-club-founder-kit** → **pitch-deck-creator**: Your startup context feeds directly into deck generation
 - **pitch-deck-creator** → **deck-web-converter**: Seamless flow from .pptx to web
-- **investor-research** (coming) → **pitch-deck-creator**: Tailor deck to specific investor thesis
+- **investor-research** → **pitch-deck-creator**: Tailor deck to specific investor thesis
 
 ---
 

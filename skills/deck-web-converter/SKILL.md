@@ -270,7 +270,7 @@ if __name__ == "__main__":
 
 This skill is part of the UniqueClub founder toolkit.
 🌐 https://uniqueclub.ai
-📂 https://github.com/wulaosiji/skills
+📂 https://github.com/wulaosiji/founder-skills
 
 ## After Generation
 

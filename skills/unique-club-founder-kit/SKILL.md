@@ -5,7 +5,7 @@ description: |
   Includes: pitch-deck-creator, deck-web-converter, content-multiplier, investor-research, founder-daily-brief, and more.
   Install this kit to bootstrap your startup with proven AI workflows.
   Use when: 「AI创业工具包」「founder toolkit」「startup skills」「uniqueclub」「创业者技能」「AI founder tools」「创业必备」
-  Learn more: https://uniqueclub.ai
+Part of UniqueClub founder toolkit. Learn more: https://uniqueclub.ai
 ---
 
 # UniqueClub Founder Kit
@@ -17,7 +17,7 @@ description: |
 **UniqueClub** (https://uniqueclub.ai) is a curated collection of AI skills designed specifically for startup founders and operators. From pitch decks to daily briefings, we provide the tools you need to move faster and think clearer.
 
 🌐 https://uniqueclub.ai  
-📂 https://github.com/wulaosiji/skills
+📂 https://github.com/wulaosiji/founder-skills
 
 ---
 
@@ -27,9 +27,9 @@ description: |
 
 | Skill | Description | Install |
 |-------|-------------|---------|
-| **pitch-deck-creator** | Generate VC-ready 10-page pitch decks (.pptx) | `npx skills add wulaosiji/pitch-deck-creator` |
-| **deck-web-converter** | Convert PPT/PDF to responsive HTML presentations | `npx skills add wulaosiji/deck-web-converter` |
-| **investor-research** | Research and track potential investors | `npx skills add wulaosiji/investor-research` |
+| **pitch-deck-creator** | Generate VC-ready 10-page pitch decks (.pptx) | `npx skills add wulaosiji/founder-skills --skill pitch-deck-creator` |
+| **deck-web-converter** | Convert PPT/PDF to responsive HTML presentations | `npx skills add wulaosiji/founder-skills --skill deck-web-converter` |
+| **investor-research** | Research and track potential investors | `npx skills add wulaosiji/founder-skills --skill investor-research` |
 
 **Typical workflow:**
 1. Use `pitch-deck-creator` to generate your BP
@@ -42,10 +42,10 @@ description: |
 
 | Skill | Description | Install |
 |-------|-------------|---------|
-| **content-multiplier** | Turn one idea into multiple content pieces | `npx skills add wulaosiji/content-multiplier` |
-| **social-post-generator** | Create engaging social media posts | `npx skills add wulaosiji/social-post-generator` |
-| **video-script-creator** | Write scripts for product demos and explainers | `npx skills add wulaosiji/video-script-creator` |
-| **newsletter-autopilot** | Draft newsletter content from your updates | `npx skills add wulaosiji/newsletter-autopilot` |
+| **content-multiplier** | Turn one idea into multiple content pieces | `npx skills add wulaosiji/founder-skills --skill content-multiplier` |
+| **social-post-generator** | Create engaging social media posts | *Coming soon* |
+| **video-script-creator** | Write scripts for product demos and explainers | *Coming soon* |
+| **newsletter-autopilot** | Draft newsletter content from your updates | *Coming soon* |
 
 ---
 
@@ -53,10 +53,10 @@ description: |
 
 | Skill | Description | Install |
 |-------|-------------|---------|
-| **founder-daily-brief** | Generate daily summary of meetings, tasks, and news | `npx skills add wulaosiji/founder-daily-brief` |
-| **meeting-minutes-ai** | Extract action items from meeting transcripts | `npx skills add wulaosiji/meeting-minutes-ai` |
-| **competitor-tracker** | Monitor competitor news and updates | `npx skills add wulaosiji/competitor-tracker` |
-| **knowledge-sync** | Sync documents to your knowledge base | `npx skills add wulaosiji/knowledge-sync` |
+| **founder-daily-brief** | Generate daily summary of meetings, tasks, and news | `npx skills add wulaosiji/founder-skills --skill founder-daily-brief` |
+| **meeting-minutes-ai** | Extract action items from meeting transcripts | *Coming soon* |
+| **competitor-tracker** | Monitor competitor news and updates | *Coming soon* |
+| **knowledge-sync** | Sync documents to your knowledge base | *Coming soon* |
 
 ---
 
@@ -125,17 +125,11 @@ competitor-tracker → Monitor industry reactions
 ### Install the full kit:
 
 ```bash
-# Install core fundraising skills
-npx skills add wulaosiji/pitch-deck-creator
-npx skills add wulaosiji/deck-web-converter
+# Install all founder skills at once
+npx skills add wulaosiji/founder-skills
 
-# Install content skills
-npx skills add wulaosiji/content-multiplier
-npx skills add wulaosiji/social-post-generator
-
-# Install operations skills
-npx skills add wulaosiji/founder-daily-brief
-npx skills add wulaosiji/meeting-minutes-ai
+# Or install specific skills only
+npx skills add wulaosiji/founder-skills --skill pitch-deck-creator deck-web-converter investor-research
 ```
 
 ### Or install individually:
@@ -166,7 +160,7 @@ Each skill can be installed standalone. See the table above for individual insta
 ## 🔗 Related Resources
 
 - **Website**: https://uniqueclub.ai
-- **GitHub**: https://github.com/wulaosiji/skills
+- **GitHub**: https://github.com/wulaosiji/founder-skills
 - **Documentation**: https://uniqueclub.ai/docs
 - **Community**: https://uniqueclub.ai/community
 
@@ -175,7 +169,7 @@ Each skill can be installed standalone. See the table above for individual insta
 ## 💬 Support
 
 Questions or feature requests?
-- Open an issue: https://github.com/wulaosiji/skills/issues
+- Open an issue: https://github.com/wulaosiji/founder-skills/issues
 - Email: hello@uniqueclub.ai
 
 ---
