@@ -1,6 +1,6 @@
 # Founder Skills for AI Agents
 
-A collection of **17 AI agent skills** designed for startup founders. Build pitch decks, convert presentations, research investors, monitor competitors, and scale your content — all with AI coding agents like Claude Code, OpenAI Codex, Cursor, and Windsurf.
+A collection of **20 AI agent skills** designed for startup founders. Build pitch decks, convert presentations, research investors, monitor competitors, and scale your content — all with AI coding agents like Claude Code, OpenAI Codex, Cursor, and Windsurf.
 
 Part of [UniqueClub](https://uniqueclub.ai) — tools and community for ambitious founders.
 
@@ -67,7 +67,7 @@ Skills reference each other and build on shared context. Start with `unique-club
 
 ## Available Skills
 
-### Fundraising (3 skills)
+### Fundraising (7 skills)
 
 | Skill | Description | Triggers |
 |-------|-------------|----------|
@@ -75,6 +75,9 @@ Skills reference each other and build on shared context. Start with `unique-club
 | [pitch-deck-creator](skills/pitch-deck-creator/) | Generate a professional, VC-ready 10-page pitch deck as a .pptx file. Auto-adapts to your startup context. | "帮我写商业计划书", "生成BP", "做融资PPT", "pitch deck", "fundraising deck" |
 | [deck-web-converter](skills/deck-web-converter/) | Convert PPT/PDF pitch decks into responsive HTML for web sharing. Mobile-friendly, fast-loading. | "BP转网页", "PPT转HTML", "pitch deck online", "网页版BP" |
 | [investor-research](skills/investor-research/) | Research VCs, angels, and accelerators. Generate target lists with firm profiles, thesis fit, and warm intro paths. | "投资人调研", "找VC", "research investors", "VC list", "融资对象" |
+| [sequoia-structured-bp](skills/sequoia-structured-bp/) | Sequoia Capital-style 10-slide structured BP framework. Data-driven, investor-grade, with slide-by-slide writing guides and examples. | "Sequoia框架", "严谨BP", "institutional investor deck", "data-driven pitch", "Series A deck" |
+| [yc-insight-driven-bp](skills/yc-insight-driven-bp/) | Y Combinator-style insight-first BP framework. 5–8 slides built around a contrarian insight. Minimalist and founder-centric. | "YC风格", "insight-driven", "种子轮BP", "accelerator pitch", "contrarian insight" |
+| [raskin-narrative-bp](skills/raskin-narrative-bp/) | Andy Raskin-style narrative pitch framework. 5-beat story format for live presentations and Demo Day. Creates urgency and inevitability. | "Raskin框架", "叙事BP", "Demo Day pitch", "story-driven deck", "live presentation" |
 
 ### Market Intelligence (5 skills)
 
@@ -223,7 +226,7 @@ These skills are part of the **UniqueClub** founder toolkit.
 
 🌐 **https://uniqueclub.ai** — Tools, community, and resources for startup founders.
 
-📂 **https://github.com/wulaosiji/founder-skills** — 17 skills and growing.
+📂 **https://github.com/wulaosiji/founder-skills** — 20 skills and growing.
 
 Built by founders, for founders.
 
