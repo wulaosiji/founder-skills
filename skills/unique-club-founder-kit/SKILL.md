@@ -1,8 +1,8 @@
 ---
 name: unique-club-founder-kit
 description: |
-  The complete AI founder toolkit by UniqueClub. A curated collection of skills for fundraising, content, growth, and automation.
-  Includes: pitch-deck-creator, deck-web-converter, content-multiplier, investor-research, founder-daily-brief, and more.
+  Navigate the complete 24-skill AI founder toolkit by UniqueClub across foundation, fundraising, market intelligence, content creation, and operations.
+  Includes pitch planning and generation, investor research, competitive intelligence, content workflows, meeting minutes, and daily briefs.
   Install this kit to bootstrap your startup with proven AI workflows.
   Use when: 「AI创业工具包」「founder toolkit」「startup skills」「uniqueclub」「创业者技能」「AI founder tools」「创业必备」
 Part of UniqueClub founder toolkit. Learn more: https://uniqueclub.ai
@@ -23,99 +23,68 @@ Part of UniqueClub founder toolkit. Learn more: https://uniqueclub.ai
 
 ## 📦 Skills in this Kit
 
-### 🚀 Fundraising Essentials
+### Foundation (1)
 
-| Skill | Description | Install |
-|-------|-------------|---------|
-| **pitch-deck-creator** | Generate VC-ready 10-page pitch decks (.pptx) | `npx skills add wulaosiji/founder-skills --skill pitch-deck-creator` |
-| **deck-web-converter** | Convert PPT/PDF to responsive HTML presentations | `npx skills add wulaosiji/founder-skills --skill deck-web-converter` |
-| **investor-research** | Research and track potential investors | `npx skills add wulaosiji/founder-skills --skill investor-research` |
+| Skill | Purpose |
+|-------|---------|
+| `unique-club-founder-kit` | Navigate the full collection and choose an operating workflow. |
 
-**Typical workflow:**
-1. Use `pitch-deck-creator` to generate your BP
-2. Use `deck-web-converter` to create a web version for easy sharing
-3. Use `investor-research` to find the right VCs
+### Fundraising (10)
 
----
+| Skill | Purpose |
+|-------|---------|
+| `business-plan-ppt` | Design an 18-page Chinese fundraising deck. |
+| `pitch-deck-creator` | Generate a 10-slide PPTX from structured JSON. |
+| `deck-web-converter` | Convert a PPT/PDF deck to responsive HTML. |
+| `fundraising-bp-planner` | Plan a Chinese fundraising BP outline. |
+| `investor-pitch-planner` | Plan an English investor pitch outline. |
+| `investor-research` | Build and prioritize an investor target list. |
+| `investor-due-diligence` | Evaluate investor fit, activity, decision power, and risk. |
+| `sequoia-structured-bp` | Build an evidence-led Series A+ structure. |
+| `yc-insight-driven-bp` | Build an insight-first Pre-seed/Seed structure. |
+| `raskin-narrative-bp` | Build a five-beat live pitch narrative. |
 
-### ✍️ Content & Growth
+### Market Intelligence (5)
 
-| Skill | Description | Install |
-|-------|-------------|---------|
-| **content-multiplier** | Turn one idea into multiple content pieces | `npx skills add wulaosiji/founder-skills --skill content-multiplier` |
-| **social-post-generator** | Create engaging social media posts | `npx skills add wulaosiji/founder-skills --skill social-post-generator` |
-| **video-script-creator** | Write scripts for product demos and explainers | `npx skills add wulaosiji/founder-skills --skill video-script-creator` |
-| **newsletter-autopilot** | Draft newsletter content from your updates | `npx skills add wulaosiji/founder-skills --skill newsletter-autopilot` |
+| Skill | Purpose |
+|-------|---------|
+| `competitor-tracker` | Track competitor launches, pricing, and strategic moves. |
+| `market-intel-brief` | Turn current signals into an actionable market brief. |
+| `market-research-extractor` | Extract research material from multiple platforms. |
+| `social-intelligence` | Monitor social activity and market signals. |
+| `china-content-research` | Research Chinese content platforms and local narratives. |
 
----
+### Content Creation (6)
 
-### ⚙️ Operations & Automation
+| Skill | Purpose |
+|-------|---------|
+| `content-multiplier` | Repurpose one source into multiple platform formats. |
+| `founder-content-writer` | Draft long-form founder content. |
+| `social-post-generator` | Create platform-native social posts. |
+| `video-script-creator` | Write product, pitch, and founder video scripts. |
+| `infographic-generator` | Plan high-density information graphics. |
+| `newsletter-autopilot` | Turn updates and reflections into a newsletter draft. |
 
-| Skill | Description | Install |
-|-------|-------------|---------|
-| **founder-daily-brief** | Generate daily summary of meetings, tasks, and news | `npx skills add wulaosiji/founder-skills --skill founder-daily-brief` |
-| **meeting-minutes-ai** | Extract action items from meeting transcripts | `npx skills add wulaosiji/founder-skills --skill meeting-minutes-ai` |
-| **competitor-tracker** | Monitor competitor news and updates | `npx skills add wulaosiji/founder-skills --skill competitor-tracker` |
+### Operations (2)
 
----
+| Skill | Purpose |
+|-------|---------|
+| `meeting-minutes-ai` | Extract decisions, risks, and action items from meetings. |
+| `founder-daily-brief` | Compile priorities, schedule, metrics, and current signals. |
 
 ## 🔄 Pre-built Workflows
 
-### Workflow 1: Fundraising Sprint (7 Days)
+### Fundraising Preparation
 
-**Day 1-2: Story & Materials**
-```
-pitch-deck-creator → Generate 10-page BP
-  ↓
-deck-web-converter → Create web version
-  ↓
-Investor list from investor-research
-```
+`fundraising-bp-planner` or `investor-pitch-planner` → choose a BP framework → `pitch-deck-creator` → `deck-web-converter` → `investor-research` → `investor-due-diligence`
 
-**Day 3-5: Outreach Preparation**
-```
-content-multiplier → Create LinkedIn/Twitter warm-up content
-  ↓
-social-post-generator → Draft investor outreach messages
-  ↓
-video-script-creator → Prepare 2-minute elevator pitch video
-```
+### Market-to-Decision
 
-**Day 6-7: Execute & Track**
-```
-Send materials, schedule meetings
-  ↓
-meeting-minutes-ai → Capture investor feedback
-  ↓
-founder-daily-brief → Daily progress tracking
-```
+`market-research-extractor` + `china-content-research` + `social-intelligence` + `competitor-tracker` → `market-intel-brief`
 
----
+### Founder Content Engine
 
-### Workflow 2: Weekly Content Engine
-
-**Monday: Planning**
-```
-founder-daily-brief → Review week's focus
-  ↓
-content-multiplier → Generate content themes
-```
-
-**Tuesday-Thursday: Creation**
-```
-social-post-generator → Daily social content
-  ↓
-video-script-creator → Weekly video content
-  ↓
-newsletter-autopilot → Draft newsletter
-```
-
-**Friday: Distribution**
-```
-Schedule and publish
-  ↓
-competitor-tracker → Monitor industry reactions
-```
+`founder-content-writer` → `content-multiplier` → `social-post-generator` + `newsletter-autopilot` + `video-script-creator` + `infographic-generator`
 
 ---
 
@@ -133,7 +102,7 @@ npx skills add wulaosiji/founder-skills --skill pitch-deck-creator deck-web-conv
 
 ### Or install individually:
 
-Each skill can be installed standalone. See the table above for individual install commands.
+Each skill can be installed standalone with `npx skills add wulaosiji/founder-skills --skill <skill-name>`.
 
 ---
 

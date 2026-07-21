@@ -1,144 +1,82 @@
 ---
 name: pitch-deck-creator
-description: "Creates professional pitch decks and business plans in the style of a Chinese startup funding proposal (融资计划书 / BP). Triggered by requests to create investor decks, financing proposals, company overviews with market analysis, or any fundraising presentation. Supports Chinese and English content, outputs PPTX by default, and follows a polished 18-slide template with clean white backgrounds and navy blue accents."
+description: "Generate an editable 10-slide startup pitch deck as a PPTX file from structured JSON. Use when a founder needs a concrete fundraising deck covering problem, solution, business model, product, competition, traction, roadmap, team, and fundraising. Supports Chinese and English content through a bundled Python script."
 ---
 
-# Business Plan Pitch Deck Skill
+# Pitch Deck Creator
 
-Create polished, investor-facing business plan / financing proposal presentations following a proven professional template style.
+Generate a consistent 10-slide fundraising deck from structured startup data. This skill is the executable option in the BP collection: it produces a PPTX instead of only an outline or writing framework.
 
-## Reference Source
+## When to Use
 
-- **Reference type**: Uploaded artifact (PDF)
-- **Reference artifact type**: PDF (18-slide Chinese startup pitch deck for power-electronics company)
-- **Effective Reference File Type**: PPTX (slide-deck presentation)
-- **Primary language**: Chinese (Simplified) with English technical terms
-- **Reference fonts**: KaiTi (STKaiti) for Chinese body/headings; Arial for Latin/numbers; MicrosoftYaHei-Bold for emphasis
+Use this skill when the user wants an editable PPTX generated from known company information. Use a planning or narrative skill first when the user still needs to decide the story:
 
-## Supported Outputs
+- `fundraising-bp-planner` for a Chinese outline
+- `investor-pitch-planner` for an English outline
+- `sequoia-structured-bp`, `yc-insight-driven-bp`, or `raskin-narrative-bp` for a specific narrative framework
+- `business-plan-ppt` for the separate 18-page Chinese content and visual specification
 
-| Format | Support | Notes |
-|--------|---------|-------|
-| PPTX | Primary | Default output; fully editable slides |
-| PDF | Yes | Export from PPTX for distribution |
+## Bundled Implementation
 
-## Default Output Selection
+- Script: `scripts/generate_pitch_deck.py`
+- Dependency: `python-pptx>=0.6.21` from `requirements.txt`
+- Input: UTF-8 JSON
+- Output: editable 16:9 PPTX
+- Default filename: `{project_name}_BP.pptx`
 
-1. If user explicitly requests a format, use that format.
-2. Otherwise, default to **PPTX** (editable presentation).
-3. If the user asks for a "shareable" / "final" version, offer PDF as well.
+The bundled script does not export PDF. Convert the generated PPTX separately when the user explicitly needs PDF or web delivery.
 
-## Workflow: Creating a Pitch Deck
+The two files under `references/` document the legacy 18-page reference style. They are not the output contract of this 10-slide generator; use `business-plan-ppt` when that longer structure is the actual requirement.
 
-### Step 1 — Gather Inputs
+## Input Expectations
 
-Collect from the user:
-- Company name, logo, tagline
-- Industry / sector
-- Funding round and target amount
-- Key metrics (revenue, growth rate, margins, team size, IP count)
-- Product/service description + photos (if available)
-- Competitive landscape (3–5 peers)
-- Financial projections (3–5 years)
-- Team bios + photos
-- Market size / TAM data
+Collect or extract these JSON fields:
 
-If the user provides a text brief or existing document, extract the above.
+- `project_name`, `tagline`, and up to three `value_props`
+- `pain_points` and `market_size` (`tam`, `sam`, `som`)
+- `solution.features` and `solution.differentiation`
+- `business_model.revenue_streams` and `business_model.pricing`
+- `product_status`, `competitors`, `traction`, and `roadmap`
+- `team` and `fundraising`
+- `language`: `zh` or `en`
+- Optional `colors`: `primary`, `dark`, and `accent`
 
-### Step 2 — Plan Slide Structure
+Do not invent traction, market size, customer evidence, team credentials, or fundraising terms. Leave unknown values empty or mark them for confirmation before generation.
 
-Map the user's content to the standard section flow. Read `references/structure_contract.md` for the full hierarchy and layout patterns. The default 14-section flow is:
+## Workflow
 
-1. **Cover** — Company identity + investor branding + dramatic image
-2. **Investment Highlights** — 6-point grid of key selling points
-3. **Market Opportunity** — Market-size charts + growth thesis
-4. **Industry Landscape** — Competitor mapping / peer comparison
-5. **Company Positioning** — Strategic pillars / value proposition
-6. **Core Competitiveness** — Advantages matrix
-7. **Product Portfolio** — Product overview + technical architecture
-8. **Technology Differentiation** — Technical flow comparison + parameter tables
-9. **Team Introduction** — Founder + core team + advisory
-10. **Growth Forecast** — Revenue/order projections with charts
-11. **Vision / Roadmap** — Multi-phase strategic roadmap
-12. **Financing Plan** — Fund-raise ask + allocation breakdown
-13. **Appendix** — Supporting data, product photos, detailed comparisons
-14. **Disclaimer** — Legal disclaimer + contact information
+1. Extract the company information and list any missing decision-critical fields.
+2. Confirm every factual claim that will appear in the deck.
+3. Create a UTF-8 JSON input file using the schema in `README.md`.
+4. Install the local dependency with `python3 -m pip install -r requirements.txt` when needed.
+5. Run:
 
-**Adaptation rule**: Skip sections the user does not have content for. Merge closely related sections if the deck would otherwise exceed 20 slides. For seed-stage companies, sections 7–9 may be lighter; for growth-stage, sections 10–12 are heavier.
+   ```bash
+   python3 scripts/generate_pitch_deck.py --input startup.json --output Company_BP.pptx
+   ```
 
-**CRITICAL**: The reference uses a flat 18-page structure with NO section-divider pages between major sections. Do NOT add chapter-divider slides.
+6. Open the PPTX and review text overflow, missing fields, contrast, and factual accuracy.
+7. Revise the JSON and regenerate rather than manually patching repeated content.
 
-### Step 3 — Apply Visual Style
+## Fixed 10-Slide Output
 
-Read `references/style_contract.md` for the full style specification. Key rules:
+| # | Slide | Primary input |
+|---|-------|---------------|
+| 1 | Cover | `project_name`, `tagline`, `value_props` |
+| 2 | Market Pain Points | `pain_points`, `market_size` |
+| 3 | Solution | `solution` |
+| 4 | Business Model | `business_model` |
+| 5 | Product Demo | `product_status` |
+| 6 | Competitive Analysis | `competitors` |
+| 7 | Traction | `traction` |
+| 8 | Roadmap | `roadmap` |
+| 9 | Team | `team` |
+| 10 | Fundraising | `fundraising` |
 
-- **Background**: WHITE (`#FFFFFF`) on ALL content slides. No dark backgrounds ever.
-- **Color palette**: Primary Blue `#1B3A6B` (navy blue) as the dominant accent. Green is ONLY for secondary chart series (e.g., green bars for overseas/secondary data). No green as primary accent.
-- **Header**: Navy blue horizontal line (2 px) below the page title on every content slide. Company logo in top-right corner on every content page.
-- **Data visualization**: Navy blue bars/columns as PRIMARY color. Green only for secondary data series. Donut charts use navy blue + green (or navy blue + gray).
-- **Highlight style**: Key metrics in bold, 2–4 pt larger than surrounding text.
-- **Conclusion banners**: Full-width navy blue rectangle at bottom with white takeaway text.
+## Output Standards
 
-### Step 4 — Design Each Slide
-
-For each slide, choose from the layout pattern catalog defined in `references/structure_contract.md`:
-
-- **Grid Highlights** (Pattern A) — 3×2 cards with icons, titles, and two-line bullet summaries
-- **Dual Chart** (Pattern B) — Two side-by-side charts with dark title bars
-- **Comparison Flow** (Pattern C) — Horizontal arrow flow + comparison table below
-- **Strategic Pillars** (Pattern D) — Vertical stack: navy blue label pill + bullet list per row
-- **Three-Column Matrix** (Pattern E) — Three side-by-side modules + bottom icon grid
-- **Top/Bottom Comparison** (Pattern F) — Upper/lower flow diagrams with callout boxes
-- **Photo Grid** (Pattern G) — 3-column product photos with captions
-- **Conclusion Banner Bottom** (Pattern H) — Navy blue full-width takeaway banner
-
-Design principles per slide:
-- One slide, one message
-- Max 40–50 CJK chars or ~80 English words of body text
-- 3–6 highlighted data points
-- Prefer charts/diagrams over text bullets
-- Every claim backed by a number, chart, or named source
-
-### Step 5 — Review & Polish
-
-- Ensure all content pages have WHITE backgrounds — no exceptions
-- Verify navy blue is the primary accent color everywhere
-- Check that all charts use navy blue as the primary fill color
-- Confirm logo placement (top-right) is consistent on every content slide
-- Ensure header underline (navy blue) appears below every page title
-- Validate that text does not overflow shapes
-- Verify team member photos are actual photos, not generic icons
-- Verify product photos are actual images, not placeholders
-- Do NOT add "Strictly Confidential" watermarks or footers
-
-## Slide Type Quick Reference
-
-| Slide Type | Recommended Layout Pattern | Key Visual Elements |
-|---|---|---|
-| Cover | Split 1/3 white + 2/3 image | Logo, title, subtitle, investor logo, hero image on right |
-| Highlights | Pattern A (Grid) | 6 icon cards, key numbers |
-| Market size | Pattern B (Dual Chart) | Navy blue bar charts, source labels |
-| Competitors | Pattern C (Comparison Flow) | Arrow flow, peer logos, comparison table |
-| Positioning | Pattern D (Pillars) | Navy blue label pills + bullet lists |
-| Advantages | Pattern E (3-Column Matrix) | Side-by-side modules, icon grid |
-| Tech differentiation | Pattern F (Top/Bottom) | Flow diagrams, callout boxes |
-| Team | Custom: Photo + Bio cards | Headshots (actual photos), names, titles, bullet bios |
-| Financial projections | Pattern B (Dual Chart) | Navy blue bar chart + navy/green pie chart |
-| Roadmap | Sequential stages | Rounded rectangles, arrows, stage numbers |
-| Funding ask | Custom: Centered large number + 4 ring charts | Large amount, 4 separate donut charts, allocation labels |
-| Product photos | Pattern G (Photo Grid) | 3 actual product images with captions |
-| Comparison tables | Custom: Full-width table | Navy blue header, zebra rows, bold first column |
-| Disclaimer | Text-heavy single column | Large title, bullet disclaimers, contact grid |
-
-## Font Strategy for CJK Content
-
-When the deck contains Chinese text (default assumption):
-- **Heading font**: KaiTi / STKaiti (or Source Han Serif SC as substitute)
-- **Body font**: Same as heading (single-family consistency)
-- **Latin/number supplement**: Arial (for English terms and numerals)
-- **Bold emphasis**: Use the font's bold weight or switch to a bold-compatible CJK face (e.g., Microsoft YaHei Bold)
-
-When the deck is English-only:
-- **Heading font**: Georgia or Merriweather (serif, professional)
-- **Body font**: Same family
-- **Accent/bold**: Use the bold weight of the same family
+- Confirm that the generated file contains exactly 10 slides.
+- Keep the 16:9 dimensions and the chosen color tokens consistent.
+- Treat generated layouts as a first draft: review overflow and sparse slides manually.
+- Replace empty placeholders before external sharing.
+- Keep source data and claims traceable; never present assumptions as verified facts.

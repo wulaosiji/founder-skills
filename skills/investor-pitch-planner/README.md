@@ -1,21 +1,24 @@
-# Founder Skills — BP Writing Collection
+# Investor Pitch Planner
 
-A curated set of battle-tested business plan / pitch deck writing frameworks, extracted from top-tier VCs and legendary founders.
+Generate an English fundraising pitch outline covering Problem, Solution, Market, Business Model, Team, and The Ask. This skill plans the investor story and data presentation; it does not generate a PPTX file.
 
-## Skills
+## Use This Skill When
 
-| Skill | Style | Source |
-|-------|-------|--------|
-| [sequoia-structured-bp](sequoia-structured-bp.md) | Data-driven, 10-slide structure | Sequoia Capital |
-| [yc-insight-driven-bp](yc-insight-driven-bp.md) | Insight-first, minimalist | Y Combinator |
-| [raskin-narrative-bp](raskin-narrative-bp.md) | Story-driven, urgency-led | Andy Raskin |
+- The working language is English.
+- The founder needs a complete outline before slide production.
+- Key company information exists but needs to be organized for investors.
 
 ## How to Use
 
-1. Pick the skill that matches your audience and stage
-2. Follow the slide-by-slide guide
-3. Use the checklist at the end to self-review before sending
+1. Provide the project description, stage, traction, team, target round, and intended use of funds.
+2. Answer up to five clarification questions or ask the agent to mark assumptions.
+3. Review the six-module outline and its data-visualization recommendations.
+4. Pass the approved outline to `pitch-deck-creator` or another presentation workflow.
 
-## Contributing
+## Related Frameworks
 
-These are living documents. If you find a better framing or example, open a PR.
+- [Sequoia Structured BP](../sequoia-structured-bp/) — evidence-led structure for Series A+ and institutional review.
+- [YC Insight-Driven BP](../yc-insight-driven-bp/) — concise, insight-first structure for Pre-seed/Seed.
+- [Raskin Narrative BP](../raskin-narrative-bp/) — five-beat story for Demo Day and live pitches.
+
+For a Chinese outline, use [fundraising-bp-planner](../fundraising-bp-planner/).

@@ -7,12 +7,12 @@ Generate a professional, VC-ready 10-page pitch deck as a .pptx file.
 ### Quick Start
 
 ```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Generate pitch deck from JSON
+# Enter the skill directory and install its dependency
 cd skills/pitch-deck-creator
-python scripts/generate_pitch_deck.py --input examples/startup_data.json --output MyStartup_BP.pptx
+python3 -m pip install -r requirements.txt
+
+# Create startup.json using the schema below, then generate the deck
+python3 scripts/generate_pitch_deck.py --input startup.json --output MyStartup_BP.pptx
 ```
 
 ### Input JSON Format
